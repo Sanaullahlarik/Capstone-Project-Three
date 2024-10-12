@@ -32,4 +32,13 @@
 .recipe-image{
   background-image: url(../images/recape-image.jpg);
   background-size:cover;
+  width: 550px !important;
+  height: 50vh;
+}
+
+.Fresh-items-image{
+  background-image: url(../images/fresh-item-image.jpg);
+  background-size: cover;
+  width: 550px !important;
+  height: 50vh;
 }
