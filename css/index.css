@@ -4,6 +4,10 @@
 }
 
 .carousel-item img {
+  height: 75vh;
+}
+
+/* .carousel-item img {
   height: 76vh; 
 }
 
@@ -18,4 +22,14 @@
   .carousel-item img {
     height: 70vh; 
   }
+} */
+
+.fruits-div{
+  background-image: url(../images/background-img.jpg);
+  background-size: cover;
+}
+
+.recipe-image{
+  background-image: url(../images/recape-image.jpg);
+  background-size:cover;
 }

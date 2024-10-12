@@ -20,7 +20,7 @@
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js"></script>
   </head>
   <body class="m-0 p-0">
-    <!-- second header -->
+    <!-- first header -->
     <header class="container my-3 border-bottom py-2">
       <div class="d-flex justify-content-between">
         <div class="d-none d-sm-block">
@@ -136,56 +136,157 @@
         </div>
       </div>
     </nav>
-    <script src="./javaScript/script.js"></script>
-  </body>
-
   <!-- hero section -->
 
-  <div id="carouselExampleIndicators" class="carousel slide">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
     </div>
-  
-    <div class="carousel-inner position-relative">
 
-      <div class="carousel-item active">
-        <div class="hero-section position-absolute top-50 start-50 translate-middle text-center">
-          <h4 class="heading-1 fs-6 fs-md-5 fw-normal">Most Trusted Organic Food</h4>
-          <h1 class="fs-4 fs-md-2">Fresh Organic Items For</h1>
-          <h1 class="fs-4 fs-md-2">Your Healthy Life</h1>
-          <div class="pt-2">
-            <button type="button" class="btn btn-success btn-outline-warning text-white border-0 px-2 px-md-4 ms-sm-3 mb-2">LEARN MORE</button>
-            <button type="button" class="btn btn-warning text-white btn-outline-success border-0 px-2 px-md-4 mx-2 mx-md-3 mb-2">START TODAY</button>
-          </div>
-        </div>
-        <img class="img-fluid w-100" src="./images/hero-image-1.jpg" alt="hero-img-1">
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
       </div>
+    
+      <div class="carousel-inner position-relative">
   
+        <div class="carousel-item active">
+          <div class="hero-section position-absolute top-50 start-50 translate-middle text-center">
+            <h4 class=" fs-4">Most Trusted Organic Food</h4>
+            <h1 class="hero-heading fw-bold">Fresh Organic Items For <br> Your Healthy Life</h1>
+            <div class="pt-2">
+              <button type="button" class="btn btn-success btn-outline-warning text-white border-0 px-2 px-md-4 ms-sm-3 mb-2">LEARN MORE</button>
+              <button type="button" class="btn btn-warning text-white btn-outline-success border-0 px-2 px-md-4 mx-2 mx-md-3 mb-2">START TODAY</button>
+            </div>
+          </div>
+          <img class="d-block w-100" src="./images/hero-image-1.jpg" alt="hero-img-1">
+        </div>
+    
+     
+        <div class="carousel-item" data-intervel="1000">
+          <div class="hero-section position-absolute top-50 start-50 translate-middle text-center">
+            <h4 class="fs-4 fs-md-5 fw-normal">Most Trusted Organic Food</h4>
+            <h1 class="hero-heading fw-bold">Organic Fruits, <br> Vegetables & Meat</h1>
+           
+            <div class="pt-2">
+              <button type="button" class="btn btn-success btn-outline-warning text-white border-0 px-2 px-md-4 mb-2">LEARN MORE</button>
+              <button type="button" class="btn btn-warning text-white btn-outline-success border-0 px-2 px-md-4 mx-2 mx-md-3 mb-2">START TODAY</button>
+            </div>
+          </div>
+          <img class="d-block w-100" src="./images/hero-image-2.jpg" alt="hero-img-2">
+        </div>
+    
    
-      <div class="carousel-item">
-        <div class="hero-section position-absolute top-50 start-50 translate-middle text-center">
-          <h4 class="heading-1 fs-6 fs-md-5 fw-normal">Most Trusted Organic Food</h4>
-          <h1 class="fs-4 fs-md-2">Fresh Organic Items For</h1>
-          <h1 class="fs-4 fs-md-2">Your Healthy Life</h1>
-          <div class="pt-2">
-            <button type="button" class="btn btn-success btn-outline-warning text-white border-0 px-2 px-md-4 mb-2">LEARN MORE</button>
-            <button type="button" class="btn btn-warning text-white btn-outline-success border-0 px-2 px-md-4 mx-2 mx-md-3 mb-2">START TODAY</button>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+     </div>
+  </div>
+
+  <!--section-1 -->
+ <div class="container">
+  <div class="row m-lg-5">
+    <div class="col-12 col-md-6 col-sm-12">
+      <img class="mb-3 ms-4 img-fluid" src="./images/icon-1.png" alt="leaf-icon">
+      <h2>Producing The Finest and Good <br> Taste Organic Foods With <br> Affordable Price</h2>
+      <h6 class="mt-4 text-success">From the hearts of California to the landing farms <br> of the world since 1920!</h6>
+    </div>
+    <div class="col-12 col-md-6 col-sm-12">
+      <div class="mt-5">
+        <p>Lore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam volupta tem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur mag dolores eosuia ely ratione voluptatem sequib nesciunt.</p>
+      <p class="mb-5">Lore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam volupta tem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur mag dolores eosuia ely ratione voluptatem sequib nesciunt.</p>
+      </div>
+      <div class="row flex-wrap">
+        <div class="card border-0 shadow text-center col-lg-4 col-md-4 col-sm-12 col-12">
+          <div class="card-body">
+            <img class="img-fluid" src="./images/tracktor-icon.png" alt="tracktor-img">
+            <h5 class="card-title pt-3">Organic Farms</h5>
           </div>
         </div>
-        <img class="img-fluid w-100" src="./images/hero-image-2.jpg" alt="hero-img-2">
+    
+        <div class="card border-0 shadow text-center col-lg-4 col-md-4 col-sm-12 col-12">
+          <div class="card-body">
+            <img class="img-fluid" src="./images/sun-icon.png" alt="sun-img">
+            <h5 class="card-title pt-3">Chemically Safe</h5>
+          </div>
+        </div>
+    
+        <div class="card border-0 shadow text-center col-lg-4 col-md-4 col-sm-12 col-12">
+          <div class="card-body">
+            <img class="img-fluid" src="./images/icon-2.png" alt="icon-2">
+            <h5 class="card-title pt-3">fully Nutritions</h5>
+          </div>
+        </div>
       </div>
-  
- 
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
   </div>
+ </div>
+
+ <!-- section-2 -->
+  <div class="fruits-div py-5">
+   <div class="container">
+    <div class="row justify-content-evenly align-items-center px-5 flex-wrap">
+      <div class="col-lg-2 col-md-3 col-sm-6 col-6 text-center">
+        <img src="./images/apple-img.png" alt="apple-img">
+        <h5 class="mt-2">Apples</h5>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-6 col-6 text-center">
+        <img src="./images/banana-img.png" alt="banana-img">
+        <h5 class="mt-2">Banana</h5>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-6 col-6 text-center"> 
+        <img src="./images/grapes-img.png" alt="grapes-img">
+        <h5 class="mt-2">Grapes</h5>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-6 col-6  text-center">
+        <img src="./images/straberry-img.png" alt="straberry-img">
+        <h5 class="mt-2">Straberry</h5>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-6 col-6  text-center">
+        <img src="./images/carrots-img.png" alt="carrots-img">
+        <h5 class="mt-2">Carrots</h5>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-6 col-6  text-center">
+        <img src="./images/lemon-img.png" alt="lemon-img">
+        <h5 class="mt-2">Lemon</h5>
+      </div>
+     </div>
+   </div>
+  </div>
+
+  <!-- section-3 -->
+   <div class="container">
+    <div class="row">
+      <div class="recipe-image col-lg-6 col-md-6 col-sm-12 col-12">
+
+      </div>
+      <div class="Fresh-items-image col-lg-6 col-md-6 col-sm-12 col-12">
+
+      </div>
+
+    </div>
+
+   </div>
+  <script src="./javaScript/script.js"></script>
+</body>
 </html>
