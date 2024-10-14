@@ -78,7 +78,7 @@
     </header>
 
     <!-- main header -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg sticky-top bg-white m-0">
       <div class="container">
         <a class="navbar-brand" href="#"
           ><img src="./images/logo-b.svg" alt=""
@@ -121,6 +121,27 @@
                 >Contact Us</a
               >
             </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active fs-5 fw-normal dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false "
+              >
+                Account
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li>
+                  <a class="dropdown-item" href="../pages/login.html">Login</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../pages/register.html"
+                    >Register</a
+                  >
+                </li>
+              </ul>
+            </li>
           </ul>
           <div class="d-flex" role="search">
             <iconify-icon class="fs-3 fw-bold" icon="fa:search"></iconify-icon>
@@ -136,148 +157,254 @@
         </div>
       </div>
     </nav>
-  <!-- hero section -->
+    <!-- hero section -->
 
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <div class="carousel-indicators">
-      <button
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide-to="0"
-        class="active"
-        aria-current="true"
-        aria-label="Slide 1"
-      ></button>
-      <button
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide-to="1"
-        aria-label="Slide 2"
-      ></button>
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+      </div>
+
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+        </div>
+
+        <div class="carousel-inner position-relative">
+          <div class="carousel-item active">
+            <div
+              class="hero-section position-absolute top-50 start-50 translate-middle text-center"
+            >
+              <h4 class="fs-4">Most Trusted Organic Food</h4>
+              <h1 class="hero-heading fw-bold">
+                Fresh Organic Items For <br />
+                Your Healthy Life
+              </h1>
+              <div class="pt-2 d-none d-md-block">
+                <button
+                  type="button"
+                  class="btn btn-success btn-outline-warning text-white border-0 px-2 px-md-4 ms-sm-3 mb-2"
+                >
+                  LEARN MORE
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-warning text-white btn-outline-success border-0 px-2 px-md-4 mx-2 mx-md-3 mb-2"
+                >
+                  START TODAY
+                </button>
+              </div>
+            </div>
+            <img style="height: 75vh;"
+              class="d-block w-100"
+              src="./images/hero-image-1.jpg"
+              alt="hero-img-1"
+            />
+          </div>
+
+          <div class="carousel-item" data-intervel="1000">
+            <div
+              class="hero-section position-absolute top-50 start-50 translate-middle text-center"
+            >
+              <h4 class="fs-4 fs-md-5 fw-normal">Most Trusted Organic Food</h4>
+              <h1 class="hero-heading fw-bold">
+                Organic Fruits, <br />
+                Vegetables & Meat
+              </h1>
+
+              <div class="pt-2 d-none d-md-block">
+
+                <button
+                  type="button"
+                  class="btn btn-success btn-outline-warning text-white border-0 px-2 px-md-4 mb-2"
+                >
+                  LEARN MORE
+                </button>
+
+                <button
+                  type="button"
+                  class="btn btn-warning text-white btn-outline-success border-0 px-2 px-md-4 mx-2 mx-md-3 mb-2"
+                >
+                  START TODAY
+                </button>
+
+              </div>
+            </div>
+            <img style="height: 75vh;"
+              class="d-block w-100"
+              src="./images/hero-image-2.jpg"
+              alt="hero-img-2"
+            />
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
     </div>
 
-    <div id="carouselExampleIndicators" class="carousel slide">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      </div>
-    
-      <div class="carousel-inner position-relative">
-  
-        <div class="carousel-item active">
-          <div class="hero-section position-absolute top-50 start-50 translate-middle text-center">
-            <h4 class=" fs-4">Most Trusted Organic Food</h4>
-            <h1 class="hero-heading fw-bold">Fresh Organic Items For <br> Your Healthy Life</h1>
-            <div class="pt-2">
-              <button type="button" class="btn btn-success btn-outline-warning text-white border-0 px-2 px-md-4 ms-sm-3 mb-2">LEARN MORE</button>
-              <button type="button" class="btn btn-warning text-white btn-outline-success border-0 px-2 px-md-4 mx-2 mx-md-3 mb-2">START TODAY</button>
-            </div>
-          </div>
-          <img class="d-block w-100" src="./images/hero-image-1.jpg" alt="hero-img-1">
-        </div>
-    
-     
-        <div class="carousel-item" data-intervel="1000">
-          <div class="hero-section position-absolute top-50 start-50 translate-middle text-center">
-            <h4 class="fs-4 fs-md-5 fw-normal">Most Trusted Organic Food</h4>
-            <h1 class="hero-heading fw-bold">Organic Fruits, <br> Vegetables & Meat</h1>
-           
-            <div class="pt-2">
-              <button type="button" class="btn btn-success btn-outline-warning text-white border-0 px-2 px-md-4 mb-2">LEARN MORE</button>
-              <button type="button" class="btn btn-warning text-white btn-outline-success border-0 px-2 px-md-4 mx-2 mx-md-3 mb-2">START TODAY</button>
-            </div>
-          </div>
-          <img class="d-block w-100" src="./images/hero-image-2.jpg" alt="hero-img-2">
-        </div>
-    
-   
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-     </div>
-  </div>
-
-  <!--section-1 -->
-  <div class="container p-5">
-    <div class="row">
-        <div class=" col-md-5">
-            <img class="img-fluid mb-3 ms-5" src="./images/icon-1.png" alt="leaf-icon">
-            <h1>Producing The Finest and Good Taste Organic Foods With Affordable Price</h1>
-            <h3 class="text-success">From the hearts of California to the landing farms of the world since 1920!
-            </h3>
-
+    <!--section-1 -->
+    <div class="container p-5">
+      <div class="row">
+        <div class="col-md-5">
+          <img
+            class="img-fluid mb-3 ms-5"
+            src="./images/icon-1.png"
+            alt="leaf-icon"
+          />
+          <h1 class="fs-3 fw-bold">
+            Producing The Finest and Good Taste Organic Foods With Affordable
+            Price
+          </h1>
+          <h3 class="text-success fs-3 fw-normal">
+            From the hearts of California to the landing farms of the world
+            since 1920!
+          </h3>
         </div>
         <div class="col-md-7 mt-sm-5 mt-sm-3">
-            <div>
-                <p>Lorem veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptate
-                    tem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur mag dolores eosuia ely
-                    ratione voluptatem sequib nesciunt.</p>
-                <p>Lorem veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptate
-                    tem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur mag dolores eosuia ely
-                    ratione voluptatem sequib nesciunt.</p>
+          <div>
+            <p>
+              Lorem veritatis et quasi architecto beatae vitae dicta sunt
+              explicabo. Nemo enim ipsam voluptate tem quia voluptas sit
+              aspernatur aut odit aut fugit sed quia consequuntur mag dolores
+              eosuia ely ratione voluptatem sequib nesciunt.
+            </p>
+            <p>
+              Lorem veritatis et quasi architecto beatae vitae dicta sunt
+              explicabo. Nemo enim ipsam voluptate tem quia voluptas sit
+              aspernatur aut odit aut fugit sed quia consequuntur mag dolores
+              eosuia ely ratione voluptatem sequib nesciunt.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-12">
+              <div class="bg-white shadow-sm w-100 text-center p-3 mb-2">
+                <img src="./images/tracktor-icon.png" />
+                <h5 class="mt-2">ORGANIC FARMS</h5>
+              </div>
             </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-12">
-                    <div class="bg-white shadow-sm w-100 text-center p-3 mb-2">
-                        <img src="./images/tracktor-icon.png">
-                        <h5 class="mt-2">ORGANIC FARMS</h5>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="bg-white shadow-sm w-100 text-center p-3 mb-2">
-                        <img src="./images/sun-icon.png">
-                        <h5 class="mt-2">CHEMICALLY SAFE</h5>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="bg-white shadow-sm w-100 text-center p-3 mb-2">
-                        <img src="./images/icon-2.png">
-                        <h5 class="mt-2">FULLY NUTRITIONS</h5>
-                    </div>
-                </div>
+            <div class="col-md-4 col-sm-12">
+              <div class="bg-white shadow-sm w-100 text-center p-3 mb-2">
+                <img src="./images/sun-icon.png" />
+                <h5 class="mt-2">CHEMICALLY SAFE</h5>
+              </div>
             </div>
-
+            <div class="col-md-4">
+              <div class="bg-white shadow-sm w-100 text-center p-3 mb-2">
+                <img src="./images/icon-2.png" />
+                <h5 class="mt-2">FULLY NUTRITIONS</h5>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
- <!-- section-2 -->
-  <div class="fruits-div py-5">
-   <div class="container">
-    <div class="row justify-content-evenly align-items-center px-5 flex-wrap">
-      <div class="col-lg-2 col-md-3 col-sm-6 col-6 text-center">
-        <img src="./images/apple-img.png" alt="apple-img">
-        <h5 class="mt-2">Apples</h5>
+    <!-- section-2 -->
+    <div style="background-image: url(./images/background-img.jpg); background-size: cover;" class="py-5">
+      <div class="container">
+        <div
+          class="row justify-content-evenly align-items-center px-5 flex-wrap"
+        >
+          <div class="col-lg-2 col-md-3 col-sm-6 col-6 text-center">
+            <img src="./images/apple-img.png" alt="apple-img" />
+            <h5 class="mt-2">Apples</h5>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-6 col-6 text-center">
+            <img src="./images/banana-img.png" alt="banana-img" />
+            <h5 class="mt-2">Banana</h5>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-6 col-6 text-center">
+            <img src="./images/grapes-img.png" alt="grapes-img" />
+            <h5 class="mt-2">Grapes</h5>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-6 col-6 text-center">
+            <img src="./images/straberry-img.png" alt="straberry-img" />
+            <h5 class="mt-2">Strwaberry</h5>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-6 col-6 text-center">
+            <img src="./images/carrots-img.png" alt="carrots-img" />
+            <h5 class="mt-2">Carrots</h5>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-6 col-6 text-center">
+            <img src="./images/lemon-img.png" alt="lemon-img" />
+            <h5 class="mt-2">Lemon</h5>
+          </div>
+        </div>
       </div>
-      <div class="col-lg-2 col-md-3 col-sm-6 col-6 text-center">
-        <img src="./images/banana-img.png" alt="banana-img">
-        <h5 class="mt-2">Banana</h5>
+    </div>
+    <!-- recipe and fresh-item section -->
+    <div class="container mt-5  p-2">
+      <div class="row g-3">
+
+          <div class="col-md-6">
+              <div class="card  position-relative"
+                  style="background-image: url(./images/recape-image.jpg); background-repeat: no-repeat; background-size: cover; height: 350px; ">
+                  <div class="position-absolute top-50 end-0 translate-middle-y p-5">
+                     <div>
+                       <h1 class="text-white fw-bold me-5 display-5"> Make <br> Finest <br>Recipes</h1>
+                     </div>
+                      <button class="btn btn-warning btn-outline-secondary text-white mt-3 px-5 py-3">Read More
+                          ></button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="card position-relative"
+                  style="background-image: url(./images/fresh-item-image.jpg); background-repeat: no-repeat; background-size: cover; height: 350px;">
+                  <div class="position-absolute top-50 start-50 translate-middle w-100 text-center">
+                      <h4 class="text-danger">Most Trusted Organic Food</h4>
+                      <h1 class="text-black fw-bold">Bring Fresh Items</h1>
+                  </div>
+              </div>
+          </div>
       </div>
-      <div class="col-lg-2 col-md-3 col-sm-6 col-6 text-center"> 
-        <img src="./images/grapes-img.png" alt="grapes-img">
-        <h5 class="mt-2">Grapes</h5>
-      </div>
-      <div class="col-lg-2 col-md-3 col-sm-6 col-6  text-center">
-        <img src="./images/straberry-img.png" alt="straberry-img">
-        <h5 class="mt-2">Straberry</h5>
-      </div>
-      <div class="col-lg-2 col-md-3 col-sm-6 col-6  text-center">
-        <img src="./images/carrots-img.png" alt="carrots-img">
-        <h5 class="mt-2">Carrots</h5>
-      </div>
-      <div class="col-lg-2 col-md-3 col-sm-6 col-6  text-center">
-        <img src="./images/lemon-img.png" alt="lemon-img">
-        <h5 class="mt-2">Lemon</h5>
-      </div>
-     </div>
-   </div>
-  </div>
-  <script src="./javaScript/script.js"></script>
-</body>
+    </div>
+    <script src="./javaScript/script.js"></script>
+  </body>
 </html>
