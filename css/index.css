@@ -3,23 +3,37 @@
   font-family: "Pacifico", cursive;
 }
 
-.container-fluid {
-  min-height: 10vh;
-  position: relative;
-  overflow: hidden;
+.fruits-images{
+  background-image: url(../images/background-img.jpg);
+  height: 35vh;
+}
+
+.recape-image{
+  background-image: url(../images/recape-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fresh-item-image{
+  background-image: url(../images/fresh-item-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(32, 27, 27, 0.767);
-  z-index: 1;
+  background-color: rgba(8, 7, 7, 0.767);
 }
 
-.bgpart {
-  position: relative;
-  z-index: 2;
+.Food-image-section{
+  background-image: url('../images/10.jpg');
+  background-attachment: fixed;
+}
+
+.fruit-and-vegetable{
+  background-image: url(../images/13.jpg);
+  height: 75vh;
+}
+
+.Offers-and-input-section{
+  background-image: url('../images/9.jpg');
 }
