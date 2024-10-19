@@ -1,21 +1,95 @@
-// let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+let cart = [];
 
-// document.querySelectorAll('.addToCartBtn').forEach((btn) => {
-//   btn.addEventListener('click', function() {
-//     // Get product info from the card
-//     let productCard = btn.closest('.container');
-//     let productName = productCard.querySelector('p').innerText;
-//     let productPrice = productCard.querySelector('h6').innerText;
+function updateCartDisplay() {
+  const cartItemsDiv = document.getElementById("cartItems");
+  cartItemsDiv.innerHTML = "";
 
-//     // Add the product to cart
-//     cartItems.push({
-//       name: productName,
-//       price: productPrice
-//     });
+  if (cart.length === 0) {
+    cartItemsDiv.innerHTML = "<p>Your cart is empty.</p>";
+    return;
+  }
 
-//     // Save updated cart to localStorage
-//     localStorage.setItem('cartItems', JSON.stringify(cartItems));
+  cart.forEach((item, index) => {
+    cartItemsDiv.innerHTML += `
+            <div class="card mb-3 p-3 shadow-sm">
+                <div class="d-flex justify-content-between align-items-center">
+                    <img src="${item.img}" alt="${item.name}" style="width: 90px; height: 90px; object-fit: cover;" class="me-3 rounded">
+                    <div class="flex-grow-1">
+                        <h5 class="mb-1">${item.name}</h5>
+                        <p class="text-muted mb-0">$${item.price} x ${item.quantity}</p>
+                        <button class="btn btn-sm btn-danger mt-2" onclick="removeItem(${index})">Remove</button> <!-- Remove Button -->
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <button class="btn btn-sm btn-outline-danger me-2" onclick="updateQuantity(${index}, -1)">-</button>
+                        <span class="px-2">${item.quantity}</span>
+                        <button class="btn btn-sm btn-outline-success ms-2" onclick="updateQuantity(${index}, 1)">+</button>
+                    </div>
+                </div>
+            </div>
+        `;
+  });
 
-//     alert(${productName} has been added to your cart!);
-//   });
-// });
+  updateTotalPrice();
+}
+
+document.querySelectorAll(".add-to-cart-btn").forEach((button) => {
+  button.addEventListener("click", function () {
+    const productName = this.getAttribute("data-name");
+    const productPrice = parseFloat(this.getAttribute("data-price"));
+    const productImg = this.getAttribute("data-img");
+
+    const listitem = cart.find((item) => item.name === productName);
+
+    if (listitem) {
+      listitem.quantity += 1;
+    } else {
+      cart.push({
+        name: productName,
+        price: productPrice,
+        img: productImg,
+        quantity: 1,
+      });
+    }
+
+    updateCartDisplay();
+    updateCartQuantityBadge();
+  });
+});
+
+function removeItem(index) {
+  cart.splice(index, 1);
+  updateCartDisplay();
+  updateCartQuantityBadge();
+}
+
+function updateQuantity(index, change) {
+  cart[index].quantity += change;
+
+  if (cart[index].quantity <= 0) {
+    cart.splice(index, 1);
+  }
+  updateCartDisplay();
+  updateCartQuantityBadge();
+}
+
+// function updateCartQuantityBadge() {
+//   const cartQuantityBadge = document.getElementById("cartQuantityBadge");
+//   const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
+//   cartQuantityBadge.innerText = totalItems;
+// }
+function updateCartQuantityBadge() {
+    const cartQuantityBadge = document.getElementById('cartQuantityBadge');
+    const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
+    cartQuantityBadge.innerText = totalItems;
+}
+
+
+function updateTotalPrice() {
+  const totalPriceElement = document.getElementById("totalPrice");
+  const totalPriceElements = document.getElementById("totalPrices");
+  const totalPrice = cart
+    .reduce((acc, item) => acc + item.price * item.quantity, 0)
+    .toFixed(2);
+  totalPriceElement.innerText = `$${totalPrice}`;
+  totalPriceElements.innerText = `$${totalPrice}`;
+}
