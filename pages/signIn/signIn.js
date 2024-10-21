@@ -1,5 +1,3 @@
-
-
 document.getElementById("signInDetail").addEventListener("click", function (event) {
   event.preventDefault();
 
@@ -10,11 +8,13 @@ document.getElementById("signInDetail").addEventListener("click", function (even
   let logInPassword = document.getElementById("inputPassword").value;
 
   if (logInEmail === localEmail && logInPassword === localPassword) {
-    alert("Login successful!");
-   
-    window.location.href= "/index.html";
-  } else {
+      var successModal = new bootstrap.Modal(document.getElementById('successModal'));
+      successModal.show();
 
-    alert("Incorrect email or password. Please try again.");
+      setTimeout(function() {
+          window.location.href = "/index.html";
+      }, 2000);
+  } else {
+      alert("Incorrect email or password. Please try again");
   }
 });
