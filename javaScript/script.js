@@ -1,8 +1,7 @@
-var cart = [];
-
+let cart = [];
 
 function updateCartDisplay() {
-    var cartItemsDiv = document.getElementById("cartItems");
+    let cartItemsDiv = document.getElementById("cartItems");
     cartItemsDiv.innerHTML = "";
 
     if (cart.length === 0) {
@@ -11,8 +10,8 @@ function updateCartDisplay() {
         return;
     }
 
-    for (var i = 0; i < cart.length; i++) {
-        var item = cart[i];
+    for (let i = 0; i < cart.length; i++) {
+        let item = cart[i];
         cartItemsDiv.innerHTML += `
             <div class="card mb-3 p-3 shadow-sm">
                 <div class="d-flex justify-content-between align-items-center">
@@ -37,14 +36,14 @@ function updateCartDisplay() {
 }
 
 
-var addToCartButtons = document.querySelectorAll(".add-to-cart-btn");
-for (var j = 0; j < addToCartButtons.length; j++) {
+let addToCartButtons = document.querySelectorAll(".add-to-cart-btn");
+for (let j = 0; j < addToCartButtons.length; j++) {
     addToCartButtons[j].addEventListener("click", function () {
-        var productName = this.getAttribute("data-name");
-        var productPrice = this.getAttribute("data-price");
-        var productImg = this.getAttribute("data-img");
+        let productName = this.getAttribute("data-name");
+        let productPrice = this.getAttribute("data-price");
+        let productImg = this.getAttribute("data-img");
 
-        var listItem = cart.find(function (item) {
+        let listItem = cart.find(function (item) {
             return item.name === productName;
         });
 
@@ -85,10 +84,10 @@ function updateQuantity(index, change) {
 
 
 function updateCartCounter() {
-    var cartQuantityBadge = document.getElementById('cartCounter');
-    var totalItems = 0;
+    let cartQuantityBadge = document.getElementById('cartCounter');
+    let totalItems = 0;
 
-    for (var k = 0; k < cart.length; k++) {
+    for (let k = 0; k < cart.length; k++) {
         totalItems += cart[k].quantity;
     }
 
@@ -97,10 +96,10 @@ function updateCartCounter() {
 
 
 function updateTotalPrice() {
-    var totalPriceElement = document.getElementById("totalPrice");
-    var totalPrice = 0;
+    let totalPriceElement = document.getElementById("totalPrice");
+    let totalPrice = 0;
 
-    for (var l = 0; l < cart.length; l++) {
+    for (let l = 0; l < cart.length; l++) {
         totalPrice += cart[l].price * cart[l].quantity;
     }
 
@@ -109,9 +108,9 @@ function updateTotalPrice() {
 
 
 if (localStorage.getItem("cartItems")) {
-    var storedCart = localStorage.getItem("cartItems").split(",");
-    for (var i = 0; i < storedCart.length; i++) {
-        var itemData = storedCart[i].split("|");
+    let storedCart = localStorage.getItem("cartItems").split(",");
+    for (let i = 0; i < storedCart.length; i++) {
+        let itemData = storedCart[i].split("|");
         cart.push({
             name: itemData[0],
             price: Number(itemData[1]),
